@@ -17,6 +17,6 @@ app.use("/api", Router)
 app.use((req, res) => {
     express.static(path.join(__dirname, 'build'))
 });
-
+ 
 const PORT = process.env.PORT || 8000
 app.listen(PORT, console.log(`Server is Running at http://localhost:${PORT}`))
