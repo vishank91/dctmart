@@ -1,0 +1,27 @@
+const Router = require("express").Router()
+
+const MaincategoryRoutes = require("./MaincategoryRoutes")
+const SubcategoryRoutes = require("./SubcategoryRoutes")
+const BrandRoutes = require("./BrandRoutes")
+const TestimonialRoutes = require("./TestimonialRoutes")
+const ProductRoutes = require("./ProductRoutes")
+const UserRoutes = require("./UserRoutes")
+const CartRoutes = require("./CartRoutes")
+const WishlistRoutes = require("./WishlistRoutes")
+const CheckoutRoutes = require("./CheckoutRoutes")
+const NewsletterRoutes = require("./NewsletterRoutes")
+const ContactUsRoutes = require("./ContactUsRoutes")
+
+Router.use("/maincategory", MaincategoryRoutes)
+Router.use("/subcategory", SubcategoryRoutes)
+Router.use("/brand", BrandRoutes)
+Router.use("/testimonial", TestimonialRoutes)
+Router.use("/product", ProductRoutes)
+Router.use("/user", UserRoutes)
+Router.use("/cart", CartRoutes)
+Router.use("/wishlist", WishlistRoutes)
+Router.use("/checkout", CheckoutRoutes)
+Router.use("/newsletter", NewsletterRoutes)
+Router.use("/contactus", ContactUsRoutes)
+
+module.exports = Router
